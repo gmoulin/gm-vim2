@@ -1,0 +1,210 @@
+*************************************************************************
+* Shortcuts
+*************************************************************************
+	<leader><F5> - CheckSyntax
+
+	w!! " save as sudo
+
+	" Switch to current dir
+	<leader>d - switch to current file dir
+	cd. - switch to current file dir in command line
+
+	<leader>a - Switch to alternate window (mnemonic: ,alternate)
+
+	<F8> to paste in text from other apps
+
+	"navigation between tabs
+	tc tabclose
+	tk tabnext
+	th tabfirst
+	tj tabprevious
+	tl tablast
+	te tabe
+	tn tabnew
+
+	" add a new line without entering in insert mode
+	<A-o> "insert a line after and return on current line
+	<A-O> "insert a line before and return on current line
+
+	""" Code folding options
+	<leader>f0 foldlevel=0
+	<leader>f1 foldlevel=1
+	<leader>f2 foldlevel=2
+	<leader>f3 foldlevel=3
+	<leader>f4 foldlevel=4
+	<leader>f5 foldlevel=5
+	<leader>f6 foldlevel=6
+	<leader>f7 foldlevel=7
+	<leader>f8 foldlevel=8
+	<leader>f9 foldlevel=9
+
+	"force tabs and retab all
+	<leader>rt - transform spaced tabs into real tabs
+
+	" Fast editing of conf & cheat sheet
+	<leader>vc - open vimrc for editing
+	<leader>vu - open vundle.vim conf for editing
+	<leader>vm - open mapping.vim for editing
+	<leader>vp - open pluggins.conf.vim for editing
+	<leader>csv - open vim_cheat_sheet for editing
+	<leader>csm - open mapping_cheat_sheet for editing
+	<leader>cso - open other_cheat_sheet for editing
+	<leader>csg - open svn_cheat_sheet for editing
+
+
+*************************************************************************
+* Plugins
+*************************************************************************
+
+	" nerdcommenter
+		<Leader>cc - Comment out the current line or text selected in visual mode.
+		<Leader>cn - Same as <Leader>cc but forces nesting.
+		<Leader>c<space> - Toggles the comment state of the selected line(s). If the topmost selected line is commented, all selected lines are uncommented and vice versa.
+		<Leader>cm - Comments the given lines using only one set of multipart delimiters.
+		<Leader>ci - Toggles the comment state of the selected line(s) individually.
+		<Leader>c$ - Comments the current line from the cursor to the end of line.
+		<Leader>cA - Adds comment delimiters to the end of line and goes into insert mode between them.
+		<Leader>ca - Switches to the alternative set of delimiters.
+		<Leader>cl
+		<Leader>cb - Same as |NERDComComment| except that the delimiters are aligned down the left side (<Leader>cl) or both sides (<Leader>cb).
+		<Leader>cu - Uncomments the selected line(s).
+
+	" nerdtree
+		<C-e> NERDTreeClose et NERDTree + path
+		<leader>e - NERDTreeToggle et NERDTreeMirror
+		<leader>nt - NERDTreeFind
+		:NERDTree [<start-directory> | <bookmark>]
+		:NERDTreeToggle [<start-directory> | <bookmark>]
+		:NERDTreeMirror
+		:NERDTreeClose
+		:NERDTreeFind
+
+		o.......Open files, directories and bookmarks....................|NERDTree-o|
+		go......Open selected file, but leave cursor in the NERDTree.....|NERDTree-go|
+		t.......Open selected node/bookmark in a new tab.................|NERDTree-t|
+		T.......Same as 't' but keep the focus on the current tab........|NERDTree-T|
+		i.......Open selected file in a split window.....................|NERDTree-i|
+		gi......Same as i, but leave the cursor on the NERDTree..........|NERDTree-gi|
+		s.......Open selected file in a new vsplit.......................|NERDTree-s|
+		gs......Same as s, but leave the cursor on the NERDTree..........|NERDTree-gs|
+		O.......Recursively open the selected directory..................|NERDTree-O|
+		x.......Close the current nodes parent...........................|NERDTree-x|
+		X.......Recursively close all children of the current node.......|NERDTree-X|
+		e.......Edit the current dif.....................................|NERDTree-e|
+
+		<CR>...............same as |NERDTree-o|.
+		double-click.......same as the |NERDTree-o| map.
+		middle-click.......same as |NERDTree-i| for files, same as |NERDTree-e| for dirs.
+
+		P.......Jump to the root node....................................|NERDTree-P|
+		p.......Jump to current nodes parent.............................|NERDTree-p|
+		K.......Jump up inside directories at the current tree depth.....|NERDTree-K|
+		J.......Jump down inside directories at the current tree depth...|NERDTree-J|
+		<c-j>...Jump down to the next sibling of the current directory...|NERDTree-C-J|
+		<c-k>...Jump up to the previous sibling of the current directory.|NERDTree-C-K|
+
+		C.......Change the tree root to the selected dir.................|NERDTree-C|
+		u.......Move the tree root up one directory......................|NERDTree-u|
+		U.......Same as 'u' except the old root node is left open........|NERDTree-U|
+		r.......Recursively refresh the current directory................|NERDTree-r|
+		R.......Recursively refresh the current root.....................|NERDTree-R|
+		m.......Display the NERD tree menu...............................|NERDTree-m|
+		cd......Change the CWD to the dir of the selected node...........|NERDTree-cd|
+
+		I.......Toggle whether hidden files displayed....................|NERDTree-I|
+		f.......Toggle whether the file filters are used.................|NERDTree-f|
+		F.......Toggle whether files are displayed.......................|NERDTree-F|
+		B.......Toggle whether the bookmark table is displayed...........|NERDTree-B|
+
+		q.......Close the NERDTree window................................|NERDTree-q|
+		A.......Zoom (maximize/minimize) the NERDTree window.............|NERDTree-A|
+		?.......Toggle the display of the quick help.....................|NERDTree-?|
+
+
+	" fugitive (https://github.com/tpope/vim-fugitive)
+		https://github.com/tpope/vim-fugitive/blob/master/doc/fugitive.txt
+
+		:Gcd [directory]        |:cd| relative to the repository.
+		:Glcd [directory]       |:lcd| relative to the repository.
+
+	" session (https://github.com/xolox/vim-session)
+		https://github.com/xolox/vim-session/blob/master/doc/session.txt
+
+		<leader>sl - ViewSession
+		<leader>ss - SaveSession
+
+		:SaveSession
+		:OpenSession
+		:RestartVim
+		:CloseSession
+		:DeleteSession
+		:ViewSession
+
+	" surround (https://github.com/tpope/vim-surround)
+		https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
+
+		Old text				Command			New text ~
+		"Hello *world!"			ds"				Hello world!
+		<div>Yo!*</div>			dst				Yo!
+		[123+4*56]/2			cs])			(123+456)/2
+		(123+4*56)/2			cs)]			[123+456]/2
+		(123+4*56)/2			cs)[			[ 123+456 ]/2
+		"Look ma, I'm *HTML!"	cs"<q>			<q>Look ma, I'm HTML!</q>
+		if *x>3 {				ysW(			if ( x>3 ) {
+		Hello w*orld!			ysiw)			Hello (world)!
+		my $str = *whee!;		vllllS'			my $str = 'whee!';
+		Hello w*orld!			yssB			{Hello world!}
+		{x*yz}					cs{{			{ xyz }
+		[x*yz]					cs[[			[ xyz ]
+		(x*yz)					cs((			( xyz )
+
+	" ack.vim (https://github.com/mileszs/ack.vim)
+		https://github.com/mileszs/ack.vim/blob/master/doc/ack.txt
+
+		:Ack [options] {pattern} [{directory}]
+		--type=TYPE, --type=noTYPE
+
+	" syntastic (http://github.com/scrooloose/syntastic/)
+		https://github.com/scrooloose/syntastic/blob/master/doc/syntastic.txt
+
+	" YouCompleteMe (https://github.com/Valloric/YouCompleteMe)
+
+	" ctrlp
+		<leader>t - open file search on current root folder
+		<leader>b - open file search on current buffer folder
+		<leader>u - open file search on current file folder
+		<leader>m - open file search on most recent used files list
+
+	" emmet
+		<c-y>, - parse code - note the comma
+
+	" tabular
+		https://github.com/godlygeek/tabular/blob/master/doc/Tabular.txt
+
+		<Leader>t= - align on =
+		<Leader>t: - align on :
+		<Leader>t, - align on ,
+
+	" quicktask
+		<leader>qt	open quicktask
+		<Leader>to	Insert a new task below
+		<Leader>tO	Insert a new task above
+		<Leader>tc	Insert a new child task
+		<Leader>tn	Insert a new note to the current task.
+		<Leader>tS	Insert a new snip to the current task. The snip note is added
+				to the current task and the file is opened for editing. For
+				more information on snips, see |quicktask-using-snips|.
+		<Leader>ts	Add start or end time stamps to the current task
+		<Leader>tu	Move the current task up
+		<Leader>td	Move the current task down
+		<Leader>tD	Mark a task as "done."
+		<Leader>ta	Show (unfold) active tasks only.
+		<Leader>ty	Show (unfold) tasks containing today's date.
+		<Leader>tv	Visually select the current task.
+		<Leader>tfi	Find incomplete timestamps (mnemonic: "task find incomplete").
+
+		@today		Inserts today's date.
+		@tomorrow	Inserts tomorrow's date.
+		@yesterday	Inserts yesterday's date.
+		@nextweek	Inserts the date exactly seven days from today.
+		@now		Inserts the current time, e.g. >

@@ -1,0 +1,34 @@
+*************************************************************************
+* BI VPN
+*************************************************************************
+	sudo bi_vpn.sh connect
+	sudo bi_vpn.sh disconnect
+
+	update password ! ( /etc/ppp/chap-secrets )
+	change network interface if needed (wlan0 for wifi, else ppp0)
+
+*************************************************************************
+* mass recursive folder permissions
+*************************************************************************
+	find ./ -type d -exec chmod 755 {} \;
+
+*************************************************************************
+* bash
+*************************************************************************
+	Ctrl-B	Move left on command line
+	Ctrl-F	Move right on command line
+	Alt-B	Move back a word
+	Alt-F	Move forward a word
+	Ctrl-A	Move to the start of the line
+	Ctrl-E	Move to the end of the line
+	Ctrl-P	Move up in history
+	Ctrl-N	Move down in history
+	Ctrl-R	Search history backward
+	Ctrl-S	Search history forward
+
+*************************************************************************
+* network synchronize
+*************************************************************************
+	scp -r e8dev3:/var/www/carandache/img/* .
+	scp -r [ssh shortcut]:path/to/files/* local/path/to/files/.
+

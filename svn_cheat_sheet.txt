@@ -1,0 +1,85 @@
+*************************************************************************
+* BI SVN tagging
+*************************************************************************
+	svn copy https://scm.b-i.com/svn/JTI-ingredients/trunk https://scm.b-i.com/svn/JTI-ingredients/tags/REC_1.7/ -m"release 1.7"
+	svn switch https://scm.b-i.com/svn/JTI-ingredients/tags/REC_1.7 .
+
+*************************************************************************
+* SVN branche merging
+*************************************************************************
+	on branch
+	svn log --stop-on-copy https://scm.b-i.com/svn/Chopard_B2b/branches/parallel_sync
+	on trunk
+	svn merge -r15:61 https://scm.b-i.com/svn/Chopard_B2b/branches/parallel_sync
+
+*************************************************************************
+* mass recursive .svn folders deletion
+*************************************************************************
+	rm -rf `find . -name .svn`
+
+*************************************************************************
+* Git submodule
+*************************************************************************
+	git submodule add [repository] [directory]
+
+	git submodule update --init --recursive
+
+	" removing submodule
+	edit .gitmodules
+	edit .git/config
+	git rm --cached [plugin path without trailing slash]
+
+	" update submodule
+	cd [directory]
+	git checkout master
+	git pull
+	then git add from project root
+
+	" update fork from outside project
+	git clone https://github.com/your_name/puppet-postgresql.git
+	cd puppet-postgresql
+	" add the upstream repo URL
+	git remote add upstream https://github.com/puppetlabs/puppet-postgresql.git
+	git fetch upstream
+	git merge upstream/master
+	" resolve conflicts that might be there because you modified your fork
+	git add [conflict files]
+	git commit -m "Commit message."
+	git push origin master
+	git push --tags
+
+	" then update submodule
+	cd /path/to/submodule
+	git checkout master
+	git pull origin master
+	git pull --tags
+	" go to your desired tag or revision ID
+	git checkout 2.1.1
+	cd /path/to/main/repo
+	" now save the new submodule pointer
+	git add /path/to/submodule/
+	git commit -m "updated submodule to Tag 2.1.1"
+	git push
+
+*************************************************************************
+* Git mass submodule update
+*************************************************************************
+	git submodule -q foreach git pull -q origin master
+
+	git remote add upstream https://github.com/honza/vim-snippets.git
+	git fetch upstream
+	git rebase upstream/master
+
+*************************************************************************
+* Git fork update
+*************************************************************************
+	git remote add original git://url-to-original-repo
+	git fetch original
+	git merge original/master
+	git push
+
+*************************************************************************
+* Git merge conflict
+*************************************************************************
+	git mergetool
+
