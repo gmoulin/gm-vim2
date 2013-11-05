@@ -53,8 +53,9 @@ set splitright " A new window is put right of the current one
 " completion
 set wildmode=list:longest,full	" completion mode
 set wildmenu					" command completion
-set wildignore+=*.o,*.obj,*.pyc,*.DS_Store,*.db " Hide irrelevent matches
+set wildignore+=*.o,*.obj,*.pyc,*.DS_Store,*.db,*/.git/*,*/.hg/*,*/.svn/* " Hide irrelevent matches
 
+set tags+=.git/tags
 
 """""""""""""""""""""""""""""
 " plugins conf and mappings
@@ -117,5 +118,3 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd! bufwritepost /home/gmoulin/gm-vim2/vundle.vim source ~/.vimrc
 autocmd! bufwritepost /home/gmoulin/gm-vim2/plugins.conf.vim source ~/.vimrc
 autocmd! bufwritepost /home/gmoulin/gm-vim2/mapping.vim source ~/.vimrc
-
-

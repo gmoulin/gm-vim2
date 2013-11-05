@@ -25,8 +25,7 @@ set completeopt+=preview
 " ---------------
 	let g:ctrlp_map = ''
 	let g:ctrlp_working_path_mode = 'ra'
-	let g:ctrlp_max_height = 10
-
+	let g:ctrlp_max_height = 15
 
 " ---------------
 " Syntastic
@@ -67,21 +66,9 @@ set completeopt+=preview
 	let g:user_emmet_leader_key = '<c-y>'
 
 " ---------------
-" javascript-syntax
-" ---------------
-	au FileType javascript call JavaScriptFold()
-
-" ---------------
 " mustache-handlebars
 " ---------------
 	let g:mustache_abbreviations = 1
-
-" ---------------
-" nodejs-complete
-" ---------------
-	"let g:nodejs_complete_config = {
-		"\ 'max_node_compl_len': 15
-	"\}
 
 " ---------------
 " session

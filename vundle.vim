@@ -16,7 +16,7 @@ Bundle 'session'
 
 Bundle 'syntastic'
 Bundle 'phpsyntax'
-Bundle 'javascript-syntax'
+Bundle 'tern'
 
 Bundle 'surround'
 Bundle 'nerdcommenter'
@@ -34,7 +34,7 @@ Bundle 'youcompleteme'
 Bundle 'phpcomplete'
 Bundle 'node-dict'
 Bundle 'html5-complete'
-Bundle 'tern'
+"Bundle 'tern'
 
 Bundle 'quicktask'
 

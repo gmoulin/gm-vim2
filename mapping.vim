@@ -101,6 +101,8 @@ cmap w!! %!sudo tee > /dev/null %
 	nnoremap <leader>u :CtrlPCurFile<CR>
 	nnoremap <leader>m :CtrlPMRUFiles<CR>
 
+	nnoremap <leader>gpt :!ctags --langmap=php:.engine.inc.module.theme.install.php --PHP-kinds=+cf-v -h ".php" -R -f .git/tags .
+
 " ---------------
 " emmet
 " ---------------
