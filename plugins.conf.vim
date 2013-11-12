@@ -6,7 +6,14 @@ set completeopt+=preview
 " airline
 " ---------------
 	let g:airline_section_b = '%{getcwd()}'
-	let g:airline_section_c = '%t'
+	let g:airline_section_c = '%{fugitive#head()}'
+	let g:airline_section_d = '%t'
+	let g:airline#extensions#branch#enabled = 1
+	let g:airline#extensions#branch#empty_message = ''
+	let g:airline#extensions#syntastic#enabled = 1
+	let g:airline#extensions#hunks#enabled = 1
+	let g:airline#extensions#hunks#non_zero_only = 1
+	let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']
 
 " ---------------
 " NERDTree
@@ -36,7 +43,7 @@ set completeopt+=preview
 	let g:syntastic_quiet_warnings = 0
 
 	let g:syntastic_javascript_checkers = ['jsl'] "gjslint, jslint, jsl, jshint
-	let g:syntastic_javascript_jsl_conf = '/home/gmoulin/gm-vim2/vim/jsl.conf'
+	let g:syntastic_javascript_jsl_conf = '~/gm-vim2/vim/jsl.conf'
 	"let g:syntastic_javascript_jslint_conf = '--white --undef --nomen --regexp --plusplus --bitwise --newcap --sloppy --vars --evil --indent --unparam'
 
 	let g:syntastic_error_symbol = '✗'
@@ -52,12 +59,7 @@ set completeopt+=preview
 	let g:UltiSnipsListSnippets="<C-l>"
 	let g:UltiSnipsEditSplit='vertical'
 
-	let g:UltiSnips = {}
-	let g:UltiSnips.snipmate_ft_filter = {
-		\ 'default' : {'filetypes': ["FILETYPE", "_"] },
-		\ 'html'	: {'filetypes': ["html", "javascript", "_"] },
-		\ 'xhtml'	 : {'filetypes': ["xhtml", "html", "javascript", "_"] },
-	\}
+	let g:UltiSnipsSnippetsDir='~/gm-vim2/vim/bundle/gm-snippets/UltiSnips'
 
 " ---------------
 " Emmet
