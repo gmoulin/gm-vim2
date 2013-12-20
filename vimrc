@@ -113,6 +113,9 @@ autocmd WinEnter * set cursorline
 " remove trailing whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+"json filetype
+autocmd BufNewFile,BufRead *.json setlocal syntax=javascript
+
 " When vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd! bufwritepost /home/gmoulin/gm-vim2/vundle.vim source ~/.vimrc

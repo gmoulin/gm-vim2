@@ -1,6 +1,6 @@
 " ~/gm-vim2/vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.4.9 on 11 November 2013 at 18:54:53.
+" Created by session.vim 2.4.9 on 20 December 2013 at 19:47:28.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=aegirLt
@@ -25,19 +25,19 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +24 /var/www/lms/404.html
-badd +21 ~/gm-vim2/vim_cheat_sheet.txt
+badd +296 ~/gm-vim2/vim_cheat_sheet.txt
 badd +18 ~/svn_cheat_sheet.txt
 badd +34 ~/other_cheat_sheet.txt
 badd +1 ~/.vimrc
 badd +47 ~/mapping_cheat_sheet.txt
-badd +130 ~/gm-vim2/mapping.vim
-badd +206 ~/gm-vim2/mapping_cheat_sheet.txt
+badd +72 ~/gm-vim2/mapping.vim
+badd +197 ~/gm-vim2/mapping_cheat_sheet.txt
 badd +12 ~/gm-vim2/vundle.vim
-badd +48 Gruntfile.js
-badd +16 bower.json
-badd +11 server.js
-badd +1 ~/gm-vim2/plugins.conf.vim
-badd +18 ~/gm-vim2/svn_cheat_sheet.txt
+badd +448 Gruntfile.js
+badd +1 bower.json
+badd +38 server.js
+badd +45 ~/gm-vim2/plugins.conf.vim
+badd +47 ~/gm-vim2/svn_cheat_sheet.txt
 badd +31 ~/gm-vim2/.gitmodules
 badd +32 ~/gm-vim2/.git/config
 badd +1 ~/gm-vim2/vim/bundle/commentary/doc/commentary.txt
@@ -104,9 +104,9 @@ badd +1 ~/gm-vim2/vim/bundle/snippets/snippets/vim.snippets
 badd +24 ~/gm-vim2/vim/bundle/snippets/snippets/xslt.snippets
 badd +7 ~/gm-vim2/vim/bundle/gm-snippets/README.md
 badd +132 ~/gm-vim2/vim/bundle/airline/doc/airline.txt
-badd +22 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript.snippets
+badd +1 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript.snippets
 badd +1 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/css.snippets
-badd +6 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_jquery.snippets
+badd +2 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_jquery.snippets
 badd +1 /var/www/lms/clean.php
 badd +7 ~/list.quicktask
 badd +9 /var/www/lms/js/script.js
@@ -115,9 +115,9 @@ badd +1 /var/www/test/.editorconfig
 badd +1 /var/www/test/.gitattributes
 badd +1 /var/www/test/.gitignore
 badd +1 /var/www/test/karma.conf.js
-badd +1 /var/www/test/karma-e2e.conf.js
+badd +11 /var/www/test/karma-e2e.conf.js
 badd +1 /var/www/test/package.json
-badd +360 /var/www/test/Gruntfile.js
+badd +48 /var/www/test/Gruntfile.js
 badd +1 /var/www/test/test/spec/controllers/main.js
 badd +1 /var/www/test/lib/api/index.js
 badd +1 /var/www/test/app/scripts/app.js
@@ -138,7 +138,7 @@ badd +471 /var/www/RE-B2B/branches/b2b/www/includes/application.php
 badd +7 .tern-project
 badd +25 /var/www/theeye/theeye/smarty/templates/pricePositioning.indexEvolution.tpl
 badd +242 ~/gm-vim2/vim/bundle/smarty/syntax/smarty.vim
-badd +1733 /var/www/chronocote_gatherer/js/main.js
+badd +1743 /var/www/chronocote_gatherer/js/main.js
 badd +20 /var/www/chronocote_gatherer/views/list.html
 badd +13 /var/www/chronocote_gatherer/views/layout.php
 badd +1 /var/www/chronocote_gatherer/views/confirm.html
@@ -148,18 +148,96 @@ badd +1 /var/www/chronocote_gatherer/inc/class_DBI.php
 badd +1 /var/www/chronocote_gatherer/inc/class_init.php
 badd +1 /var/www/chronocote_gatherer/inc/function_commun.php
 badd +1 /var/www/chronocote/com_watche/watche.php
-badd +154 /var/www/chronocote/com_watche/views/watche/tmpl/default2.php
+badd +66 /var/www/chronocote/com_watche/views/watche/tmpl/default2.php
 badd +31 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/php.snippets
-badd +124 /var/www/lms3_backup/Gruntfile.js
+badd +111 /var/www/lms3_backup/Gruntfile.js
 badd +27 index.html
-badd +29 README.md
+badd +14 README.md
 badd +29 /var/www/lms3_backup/server.js
-badd +0 params.json
+badd +1 params.json
 badd +2 Gemfile
 badd +1 index.md
-badd +3 _config.yml
+badd +1 _config.yml
+badd +8 ~/gm-vim2/other_cheat_sheet.txt
+badd +2 /var/www/chronocote/com_watche/controller.php
+badd +38 /var/www/chronocote/com_watche/tables/watche.php
+badd +1 /var/www/chronocote/com_watche/controllers/updwatche.php
+badd +51 /var/www/chronocote/com_watche/views/updwatche/view.html.php
+badd +70 /var/www/chronocote/com_watche/models/watche.php
+badd +26 /var/www/chronocote/com_watche/views/watche/view.html.php
+badd +1 /var/www/chronocote/com_watche/views/watche/tmpl/default.php
+badd +17 /var/www/chronocote/com_watche/css/style.css
+badd +177 /var/www/lms3_gh-pages/index.html
+badd +1 /var/www/lms3_gh-pages/assets/css/style.min.css
+badd +22 /var/www/lms3_gh-pages/_layouts/default.html
+badd +27 /var/www/theeye/theeye/smarty/templates/pricePositioning.priceMapping.tpl
+badd +108 /var/www/theeye/theeye/smarty/templates/pricePositioning.criteria.tpl
+badd +1 /var/www/theeye/theeye/smarty/templates/ppt/filter.tpl
+badd +50 /var/www/theeye/theeye/htdocs/pricePositioning.criteria.php
+badd +221 /var/www/theeye/theeye/lib/PricePositioningV2.class.php
+badd +1 /var/www/theeye/theeye/htdocs/pricePositioning.ajax.php
+badd +321 /var/www/theeye/theeye/htdocs/js/pages/pricePositioning.criteria.js
+badd +33 /var/www/theeye/theeye/smarty/templates/ppt/review.popup.tpl
+badd +42 /var/www/theeye/theeye/smarty/templates/home/ppt.tpl
+badd +97 /var/www/theeye/theeye/htdocs/js/pages/financial-detail.js
+badd +1 /var/www/lms3_gh-pages/_includes/sidenav-home.html
+badd +5 /var/www/lms3_gh-pages/problems-and-solutions.md
+badd +9 /var/www/lms3_gh-pages/problems-and-solutions.html
+badd +1 /var/www/lms3_gh-pages/_site/assets/css/style.min.css
+badd +1 /var/www/lms3_gh-pages/_config.yml
+badd +19 /var/www/lms3_gh-pages/assets/css/styles.css
+badd +26 /var/www/lms3_gh-pages/_includes/nav.html
+badd +18 /var/www/lms3_gh-pages/grunt-workflow.md
+badd +23 /var/www/lms3_gh-pages/grunt-workflow.html
+badd +11 .gitignore
+badd +85 package.json
+badd +14 client/bower.json
+badd +2 bowerrc.json
+badd +5 client/sass/main.sass
+badd +5 client/sass/foundation/_0_layer_foundation.sass
+badd +1 help
+badd +4 coverage/blanket.js
+badd +9 server/tests/server.js
+badd +3 client/scripts/app.js
+badd +9 client/scripts/controllers/main.js
+badd +1 client/views/partials/main.html
+badd +1 client/views/partials/main.tpl.html
+badd +19 client/tests/controllers/main.js
+badd +20 client/views/index.tpl.html
+badd +26 /var/www/test/app/views/index.html
+badd +44 /var/www/lms3_gh-pages/Gruntfile.js
+badd +211 /var/www/lms3_gh-pages/_site/index.html
+badd +2 /var/www/lms3_gh-pages/readme
+badd +2 client/sass/base/_1_layout_base.scss
+badd +8 client/sass/foundation/_0_layer_foundation.scss
+badd +5 client/sass/main.scss
+badd +1 ck
+badd +2 client/sass/project/_2_layout_project.scss
+badd +3 client/sass/cosmetic/_3_layout_cosmetic.scss
+badd +1 public/index.html
+badd +1 public/i
+badd +1 test-runner.html
+badd +51 karma.conf.js
+badd +20 client/tests/karma-shared.conf.js
+badd +17 client/tests/karma-unit.conf.js
+badd +21 client/tests/karma-midway.conf.js
+badd +8 client/tests/karma-end2end.conf.js
+badd +1 tests/karma-shared.conf.js
+badd +11 tests/karma-end2end.conf.js
+badd +18 tests/karma-midway.conf.js
+badd +1 tests/karma-unit.conf.js
+badd +30 ../AngularJS-Testing-Article/Gruntfile.js
+badd +1 ../AngularJS-Testing-Article/test/karma-shared.conf.js
+badd +1 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_angular.snippets
+badd +8 client/scripts/controllers/homeController.js
+badd +12 tests/midway/app.spec.js
+badd +6 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_mocha.snippets
+badd +1 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_express.snippets
+badd +1 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_mongodb.snippets
+badd +1 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_mongoose.snippets
+badd +1 ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_node.snippets
 silent! argdel *
-edit index.md
+edit /var/www/lms3_gh-pages/problems-and-solutions.html
 set splitbelow splitright
 wincmd t
 set winheight=1 winwidth=1
@@ -172,16 +250,51 @@ setlocal fdl=5
 setlocal fml=2
 setlocal fdn=15
 setlocal fen
-let s:l = 13 - ((12 * winheight(0) + 28) / 56)
+6
+silent! normal! zo
+59
+silent! normal! zo
+85
+silent! normal! zo
+89
+silent! normal! zo
+90
+silent! normal! zo
+91
+silent! normal! zo
+99
+silent! normal! zo
+100
+silent! normal! zo
+116
+silent! normal! zo
+130
+silent! normal! zo
+let s:l = 4 - ((3 * winheight(0) + 29) / 58)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-13
-normal! 023|
-tabedit _config.yml
+4
+normal! 03|
+tabedit client/scripts/app.js
 set splitbelow splitright
+wincmd _ | wincmd |
+split
+wincmd _ | wincmd |
+split
+wincmd _ | wincmd |
+split
+3wincmd k
+wincmd w
+wincmd w
+wincmd w
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
 wincmd t
 set winheight=1 winwidth=1
+wincmd =
 " argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -191,13 +304,88 @@ setlocal fdl=5
 setlocal fml=2
 setlocal fdn=15
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 28) / 56)
+4
+silent! normal! zo
+8
+silent! normal! zo
+9
+silent! normal! zo
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
-normal! 045|
-tabnext 1
+normal! 0
+wincmd w
+" argglobal
+edit tests/midway/app.spec.js
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=5
+setlocal fml=2
+setlocal fdn=15
+setlocal fen
+4
+silent! normal! zo
+8
+silent! normal! zo
+let s:l = 12 - ((11 * winheight(0) + 10) / 20)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+12
+normal! 03|
+wincmd w
+" argglobal
+enew
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=5
+setlocal fml=2
+setlocal fdn=15
+setlocal fen
+wincmd w
+" argglobal
+edit ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript.snippets
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=2
+setlocal fdn=15
+setlocal fen
+let s:l = 12 - ((4 * winheight(0) + 5) / 10)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+12
+normal! 0
+wincmd w
+" argglobal
+edit ~/gm-vim2/vim/bundle/gm-snippets/UltiSnips/javascript_mocha.snippets
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=2
+setlocal fdn=15
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 5) / 10)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+wincmd w
+2wincmd w
+wincmd =
+tabnext 2
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -213,8 +401,21 @@ let &so = s:so_save | let &siso = s:siso_save
 " Everything down here is generated by vim-session (not supported
 " by :mksession out of the box).
 
-tabnext 1
-1wincmd w
+tabnext 2
+3wincmd w
+let s:bufnr_save = bufnr("%")
+let s:cwd_save = getcwd()
+cwindow
+if !getbufvar(s:bufnr_save, '&modified')
+  let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
+  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
+    silent execute 'bwipeout' s:bufnr_save
+  endif
+endif
+execute "cd" fnameescape(s:cwd_save)
+1resize 19|vert 1resize 114|2resize 20|vert 2resize 114|3resize 4|vert 3resize 114|4resize 10|vert 4resize 61|5resize 10|vert 5resize 52|
+tabnext 2
+2wincmd w
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

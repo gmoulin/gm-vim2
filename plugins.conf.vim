@@ -42,9 +42,8 @@ set completeopt+=preview
 	let g:syntastic_loc_list_height = 5
 	let g:syntastic_quiet_warnings = 0
 
-	let g:syntastic_javascript_checkers = ['jsl'] "gjslint, jslint, jsl, jshint
-	let g:syntastic_javascript_jsl_conf = '~/gm-vim2/vim/jsl.conf'
-	"let g:syntastic_javascript_jslint_conf = '--white --undef --nomen --regexp --plusplus --bitwise --newcap --sloppy --vars --evil --indent --unparam'
+	let g:syntastic_javascript_checkers = ['jshint'] "gjslint, jslint, jsl, jshint
+	let g:syntastic_javascript_jshint_conf = '~/gm-vim2/vim/jshint.conf'
 
 	let g:syntastic_error_symbol = '✗'
 	let g:syntastic_warning_symbol = '⚠'
