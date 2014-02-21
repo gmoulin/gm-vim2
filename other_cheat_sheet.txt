@@ -41,3 +41,37 @@
 * kill process listening on port 9000
 *************************************************************************
 	fuser -k -n tcp 9000
+
+
+*************************************************************************
+* Cannot connect to RDP server
+*************************************************************************
+	delete entry from ~/.freerdp/known_hosts
+	certificate problem
+
+*************************************************************************
+* Rsync backup
+*************************************************************************
+	sudo rsync -rltDvu --modify-window=1 --progress --delete source/ destination/
+
+	-r: copies directories recursively
+	-l: copies symlinks as symlinks
+	-t: preserves modification times
+	-D: preserves device and special files
+	-v: shows output (verbose)
+	-u: skips files that are newer at the destination
+	-q: Suppress any non-error message, this is the contrary to -v which increases the verbosity.
+	-d: Transfer a directory without recursing, this is, only the files that are in the folder are transferred.
+	-L: Copy the file that a symlink is pointing to whenever it finds a symlink.
+	-W: Copy whole files. When we are using the delta-transfer algorithm we only copy the part of the archive that was updated, sometimes this is not desired.
+	-h: Shows the information that rsync provides us in a human readable format, the amounts are given in K's, M's, G's and so on.
+
+	--modify-window=1: this is ESSENTIAL. Basically in windows filesystems time is kept in even numbers (or some such problem). This command tells rsync to ignore filechanges that are only 1 second in difference from the original. It is almost impossible that you will create a file, sync it, and in ONE second make a change and want to sync it again. So it is safe to use this option and it means that rsync will not back up everything every time simply because of a one second change.
+
+	--progress: simply shows the progress
+
+	--delete: this is important. Basically rsync syncs files that have been changed. But what if you delete a file from the source directory? This command deletes it from your backed up hard drive as well.
+
+	--delete-excluded: this deletes folder/files that you have specifically excluded.
+
+	--exclude-from=/home/bob/Bash/BackupBigExclude.txt

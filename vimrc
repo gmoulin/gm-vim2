@@ -23,7 +23,7 @@ colorscheme vividchalk
 
 set laststatus=2 " always show status line
 set ttimeoutlen=50 " no pause when leaving insert mode
-set clipboard=unnamedplus " Yanks go on clipboard instead.
+"set clipboard=unnamedplus " Yanks go on clipboard instead.
 
 set showmatch " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
@@ -64,11 +64,9 @@ source ~/gm-vim2/mapping.vim
 
 """""""""""""""""""""""""""""
 " GVIM
-if has('gui_running')
-	set guifont=Ubuntu\ Mono\ 12
-	set guioptions-=m  "remove menu bar
-	set guioptions-=T  "remove toolbar
-endif
+set guifont=Ubuntu\ Mono\ 12
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
 
 """""""""""""""""""""""""""""
 " Search
@@ -84,7 +82,7 @@ set magic " ^ and $ are special symbols
 " backups
 set backup
 set backupdir=$HOME/.vimbackup/
-set directory=$HOME/.vimswap/
+set noswapfile
 set viewdir=$HOME/.vimviews/
 "Persistent undo
 set undodir=$HOME/.vimundo/
@@ -100,7 +98,7 @@ set foldlevel=5
 
 """""""""""""""""""""""""""""
 " autocommands
-au BufLeave,FocusLost * :silent! wall				   " Save on FocusLost
+au FocusLost * :silent! wall				   " Save on FocusLost
 
 " absolute line numbers in insert mode, relative otherwise for easy movement
 au InsertEnter * :set nu

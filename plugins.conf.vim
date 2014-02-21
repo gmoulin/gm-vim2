@@ -43,11 +43,11 @@ set completeopt+=preview
 	let g:syntastic_quiet_warnings = 0
 
 	let g:syntastic_javascript_checkers = ['jshint'] "gjslint, jslint, jsl, jshint
-	let g:syntastic_javascript_jshint_conf = '~/gm-vim2/vim/jshint.conf'
+	let g:syntastic_javascript_jshint_conf = '/home/gmoulin/gm-vim2/vim/jshint.conf'
 
 	let g:syntastic_error_symbol = '✗'
 	let g:syntastic_warning_symbol = '⚠'
-	let g:syntastic_full_redraws = 1
+	let g:syntastic_full_redraws = 0
 
 " ---------------
 " UltiSnips
@@ -76,9 +76,10 @@ set completeopt+=preview
 " ---------------
 	let g:session_autoload='yes'
 	let g:session_autosave='yes'
-	let g:session_default_to_last=1
+	"let g:session_default_to_last=1
+	let g:session_autosave_periodic=3
 	set sessionoptions=blank,buffers,curdir,folds,tabpages
-
+	set sessionoptions-=help
 " ---------------
 " node-dict
 " ---------------

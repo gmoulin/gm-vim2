@@ -1,6 +1,11 @@
 "mappings
 let mapleader = ","
 
+" no ex mode
+nnoremap Q <nop>
+" no man page for word under cursor
+nnoremap K <nop>
+
 cmap w!! %!sudo tee > /dev/null %
 
 " Split line(opposite to S-J joining line)
@@ -53,7 +58,7 @@ cmap w!! %!sudo tee > /dev/null %
 	nmap <leader><F5> :CheckSyntax<cr>
 
 " Switch to current dir
-	nmap <leader>x :lcd %:p:h<cr>
+	nmap <leader>. :lcd %:p:h<cr>
 	cmap cd. lcd %:p:h
 
 " add a new line without entering in insert mode
@@ -80,10 +85,10 @@ cmap w!! %!sudo tee > /dev/null %
 	map <leader>vu :tabnew /home/gmoulin/gm-vim2/vundle.vim<cr>
 	map <leader>vm :tabnew /home/gmoulin/gm-vim2/mapping.vim<cr>
 	map <leader>vp :tabnew /home/gmoulin/gm-vim2/plugins.conf.vim<cr>
-	map <leader>csv :vsplit /home/gmoulin/gm-vim2/vim_cheat_sheet.txt<cr>
-	map <leader>csm :vsplit /home/gmoulin/gm-vim2/mapping_cheat_sheet.txt<cr>
-	map <leader>cso :vsplit /home/gmoulin/gm-vim2/other_cheat_sheet.txt<cr>
-	map <leader>csg :vsplit /home/gmoulin/gm-vim2/svn_cheat_sheet.txt<cr>
+	map <leader>csv :split /home/gmoulin/gm-vim2/vim_cheat_sheet.txt<cr>
+	map <leader>csm :split /home/gmoulin/gm-vim2/mapping_cheat_sheet.txt<cr>
+	map <leader>cso :split /home/gmoulin/gm-vim2/other_cheat_sheet.txt<cr>
+	map <leader>csg :split /home/gmoulin/gm-vim2/svn_cheat_sheet.txt<cr>
 
 
 " ---------------
