@@ -238,6 +238,8 @@
 	ib - inner () block
 	iB - inner {} block
 	Esc - exit visual mode
+	vat - select html block (outer tag)
+	vit - select html block (inner tag)
 
 *************************************************************************
 * Visual Mode - Commands

@@ -18,7 +18,6 @@ Bundle 'session'
 Bundle 'syntastic'
 Bundle 'phpsyntax'
 Bundle 'smarty'
-Bundle 'tern'
 
 Bundle 'surround'
 Bundle 'nerdcommenter'
@@ -33,13 +32,13 @@ Bundle 'ultisnips'
 Bundle 'gm-snippets'
 
 Bundle 'emmet'
-Bundle 'mustache-handlebars'
+"Bundle 'mustache-handlebars'
 
-Bundle 'youcompleteme'
+Bundle 'YouCompleteMe'
 Bundle 'phpcomplete'
 Bundle 'node-dict'
-Bundle 'html5-complete'
-"Bundle 'tern'
+"Bundle 'html5-complete'
+Bundle 'tern'
 
 Bundle 'quicktask'
 

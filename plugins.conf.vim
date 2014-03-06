@@ -43,7 +43,7 @@ set completeopt+=preview
 	let g:syntastic_quiet_warnings = 0
 
 	let g:syntastic_javascript_checkers = ['jshint'] "gjslint, jslint, jsl, jshint
-	let g:syntastic_javascript_jshint_conf = '/home/gmoulin/gm-vim2/vim/jshint.conf'
+	let g:syntastic_javascript_jshint_conf = '/home/gmoulin/gm-vim2/vim/.jshintrc'
 
 	let g:syntastic_error_symbol = '✗'
 	let g:syntastic_warning_symbol = '⚠'
