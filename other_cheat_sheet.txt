@@ -8,9 +8,10 @@
 	change network interface if needed (wlan0 for wifi, else ppp0)
 
 *************************************************************************
-* mass recursive folder permissions
+* mass recursive permissions
 *************************************************************************
-	find ./ -type d -exec chmod 755 {} \;
+	find . -type d -exec chmod 755 {} \;
+	find . -type f -exec chmod 664 {} \;
 
 *************************************************************************
 * bash
@@ -75,3 +76,6 @@
 	--delete-excluded: this deletes folder/files that you have specifically excluded.
 
 	--exclude-from=/home/bob/Bash/BackupBigExclude.txt
+
+	--existing              skip creating new files on receiver
+	--ignore-existing       skip updating files that already exist on receiver

@@ -1,5 +1,5 @@
 {
-	"maxerr": 50,
+	"maxerr": 500,
 	"bitwise": true,
 	"camelcase": false,
 	"curly": true,
@@ -56,7 +56,18 @@
 		"console": true,
 		"window": true,
 		"document": true,
-		"_": true
+		"_": true,
+		"describe": true,
+		"xdescribe": true,
+		"it": true,
+		"xit": true,
+		"expect": true,
+		"element": true,
+		"protractor": true,
+		"by": true,
+		"process": true,
+		"__dirname": true,
+		"export": true
 	},
 	"nomen": false,
 	"onevar": false,

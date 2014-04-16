@@ -17,7 +17,7 @@ Bundle 'session'
 
 Bundle 'syntastic'
 Bundle 'phpsyntax'
-Bundle 'smarty'
+"Bundle 'smarty'
 
 Bundle 'surround'
 Bundle 'nerdcommenter'
