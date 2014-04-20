@@ -79,3 +79,17 @@
 
 	--existing              skip creating new files on receiver
 	--ignore-existing       skip updating files that already exist on receiver
+
+	* for music folder sync
+	* source is folder which has the more deletions and optionnaly new files
+	* destination is folder  which has the least deletions or no new files
+
+	* first remove deleted files from destination on source (any file not on destination will be removed on source, no files are updated / created, only deletions)
+	rsync -rtDvuh --modify-window=1 --progress --delete --existing --ignore-existing destination/ source/
+
+	* second sync source with destination (full sync, create/update/delete)
+	rsync -rtDvuh --modify-window=1 --progress --delete source/ destination/
+
+	* from laptop to stocky
+	rsync --rsh='ssh -p8994' -rtDvuh --modify-window=1 --progress --delete /home/gmoulin/Music/ guillaume@192.168.1.68:/media/music
+
