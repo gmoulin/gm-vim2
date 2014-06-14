@@ -90,6 +90,33 @@
 	* second sync source with destination (full sync, create/update/delete)
 	rsync -rtDvuh --modify-window=1 --progress --delete source/ destination/
 
+---------------------------------
+	* from laptop to backup usb drive
+		* first remove deleted files from destination on source (any file not on destination will be removed on source, no files are updated / created, only deletions)
+			rsync -rtDvuh --modify-window=1 --progress --delete --existing --ignore-existing --dry-run /media/gmoulin/Backup/Music/ /home/gmoulin/Music/
+		* first without dry run
+			rsync -rtDvuh --modify-window=1 --progress --delete --existing --ignore-existing /media/gmoulin/Backup/Music/ /home/gmoulin/Music/
+
+		* second sync source with destination (full sync, create/update/delete)
+			rsync -rtDvuh --modify-window=1 --progress --delete --dry-run /home/gmoulin/Music/ /media/gmoulin/Backup/Music/
+		* second without dry run
+			rsync -rtDvuh --modify-window=1 --progress --delete /home/gmoulin/Music/ /media/gmoulin/Backup/Music/
+
+---------------------------------
 	* from laptop to stocky
-	rsync --rsh='ssh -p8994' -rtDvuh --modify-window=1 --progress --delete /home/gmoulin/Music/ guillaume@192.168.1.68:/media/music
+	* backup stocky MP3s (added files will be deleted...)
+		* first remove deleted files from destination on source (any file not on destination will be removed on source, no files are updated / created, only deletions)
+			rsync --rsh='ssh -i /home/gmoulin/.ssh/id_ssh -p8993' -rtDvuh --modify-window=1 --progress --delete --existing --ignore-existing --dry-run guillaume@192.168.1.68:/media/music /home/gmoulin/Music/
+		* first without dry run
+			rsync --rsh='ssh -i /home/gmoulin/.ssh/id_ssh -p8993' -rtDvuh --modify-window=1 --progress --delete --existing --ignore-existing guillaume@192.168.1.68:/media/music /home/gmoulin/Music/
+
+		* second sync source with destination (full sync, create/update/delete)
+			rsync --rsh='ssh -i /home/gmoulin/.ssh/id_ssh -p8993' -rtDvuh --modify-window=1 --progress --delete --dry-run /home/gmoulin/Music/ guillaume@192.168.1.68:/media/music
+		* second without dry run
+			rsync --rsh='ssh -i /home/gmoulin/.ssh/id_ssh -p8993' -rtDvuh --modify-window=1 --progress --delete /home/gmoulin/Music/ guillaume@192.168.1.68:/media/music
+
+---------------------------------
+	* from laptop to phone
+		* sync source with destination (full sync, create/update/delete)
+		rsync -rtDvuh --modify-window=1 --progress --delete /home/gmoulin/Music/ /media/gmoulin/2D98-5921/Music/
 
